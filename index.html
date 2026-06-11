@@ -3,418 +3,532 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antique Station | Premier Antique Shop in Orange, CA</title>
-    <meta name="description" content="Antique Station on Glassell St in Orange, CA. Fine antiques, vintage collectibles, art, clocks, estate sale finds and more. Bring this website for a special in-store discount. Call (714) 633-3934.">
-    <meta name="keywords" content="antique shop Orange CA, vintage collectibles Glassell St, fine antiques, estate sale finds, Antique Station Orange">
+    <title>Antique Station | Where History Finds a Home | Fine Antiques Orange, CA</title>
+    <meta name="description" content="Antique Station — Where History Finds a Home. Fine antiques, vintage collectibles, art, clocks & estate sale finds on Glassell St in Orange. Expertly curated. Authenticated pieces. Call (714) 633-3934.">
+    <meta name="keywords" content="antique shop Orange CA, fine antiques Glassell St, vintage collectibles, estate sale finds, authenticated antiques, Antique Station Orange, Victorian furniture, Art Deco">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%237f1d1d'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='700' font-size='16' fill='%23d4a843'%3EAS%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Antique Station — Where History Finds a Home | Fine Antiques Orange">
+    <meta property="og:description" content="Expertly curated antiques on Glassell St in Orange. Victorian, Art Deco, Mid-Century & more. Every piece authenticated. Fair pricing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antiquesstationorange.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Antique Station">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Antique Station",
+        "description": "Fine antiques and vintage collectibles on Glassell St in Orange, CA. Expertly curated, authenticated, and fairly priced. Victorian, Art Deco, Mid-Century & more.",
+        "telephone": "+1-714-633-3934",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "178 S Glassell St",
+            "addressLocality": "Orange",
+            "addressRegion": "CA",
+            "postalCode": "92866",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "11:00",
+                "closes": "17:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "89"
+        },
+        "priceRange": "$$",
+        "image": "",
+        "sameAs": []
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="top-bar-left">
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    <a href="tel:7146333934">(714) 633-3934</a>
-                </span>
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    178 S Glassell St, Orange, CA
-                </span>
-            </div>
-            <div class="top-bar-right">
-                <span class="top-bar-item">Mon-Sat: 10AM-6PM | Sun: 11AM-5PM</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
+    <!-- ===================== NAVIGATION ===================== -->
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
-            <a href="#" class="logo">
-                <span class="logo-icon">AS</span>
+            <a href="#" class="logo" aria-label="Antique Station Home">
+                <div class="logo-emblem">&#10022;</div>
                 <div class="logo-text">
                     <span class="logo-name">Antique Station</span>
-                    <span class="logo-tagline">Orange's Premier Antique Destination</span>
+                    <span class="logo-sub">Where History Finds a Home</span>
                 </div>
             </a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#eras">The Eras</a></li>
+                <li><a href="#picks">Station Master's Picks</a></li>
+                <li><a href="#authentication">Authentication</a></li>
+                <li><a href="#restoration">Restoration</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-cta">Visit the Station</a></li>
+            </ul>
+            <div class="nav-status">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Checking...</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#collections" data-section="collections">Our Collections</a></li>
-                <li><a href="#why-us" data-section="why-us">Why Us</a></li>
-                <li><a href="#reviews" data-section="reviews">Reviews</a></li>
-                <li><a href="#about" data-section="about">About</a></li>
-                <li><a href="#contact" class="nav-cta" data-section="contact">Visit Us</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#eras">The Eras</a>
+        <a href="#picks">Station Master's Picks</a>
+        <a href="#authentication">Authentication</a>
+        <a href="#restoration">Restoration</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="mobile-menu-cta">Visit the Station &mdash; (714) 633-3934</a>
+    </div>
+
+    <!-- ===================== 1. DEPOT HERO ===================== -->
     <section class="hero" id="hero">
+        <div class="hero-depot-bg"></div>
         <div class="hero-overlay"></div>
+        <div class="hero-ticket-left"></div>
+        <div class="hero-ticket-right"></div>
         <div class="container hero-content">
-            <div class="hero-particles" id="heroParticles"></div>
-            <div class="hero-badge">Orange's Premier Antique Destination on Glassell St</div>
-            <h1>Discover Treasures From<br><span class="highlight">Another Era.</span></h1>
-            <p class="hero-sub">Antique Station is Orange's premier destination for fine antiques, vintage collectibles, and rare finds. Our expertly curated inventory rotates constantly, so every visit brings new discoveries. Step in and step back in time.</p>
-            <div class="hero-ctas">
-                <a href="tel:7146333934" class="btn btn-primary btn-lg btn-pulse">
+            <div class="hero-ticket reveal">
+                <div class="ticket-punch">&#10022;</div>
+                <span class="ticket-route">ORANGE &rarr; ANTIQUE STATION</span>
+            </div>
+            <h1 class="reveal stagger-1">Where History<br><span class="gold">Finds a Home.</span></h1>
+            <p class="hero-sub reveal stagger-2">Antique Station is more than a shop — it's a destination for those who understand that every piece of history deserves a place where it's respected, authenticated, and passed on to someone who will cherish it. Our expertly curated collection spans centuries of craftsmanship, every item researched and fairly priced.</p>
+            <div class="hero-actions reveal stagger-3">
+                <a href="tel:7146333934" class="btn btn-primary btn-lg">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                     Call (714) 633-3934
                 </a>
-                <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Visit Us Today</a>
+                <a href="#contact" class="btn btn-outline btn-lg">Plan Your Visit</a>
             </div>
-            <div class="hero-trust">
-                <div class="trust-item">
-                    <div class="trust-score">4.5</div>
-                    <div class="trust-label">Yelp Rating<br><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div>
+            <div class="hero-badges reveal stagger-4">
+                <div class="hero-badge">
+                    <div class="badge-num">4.5</div>
+                    <div class="badge-label">Yelp Rating</div>
                 </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">300+</div>
-                    <div class="trust-label">Items<br>Added Monthly</div>
+                <div class="hero-badge-sep"></div>
+                <div class="hero-badge">
+                    <div class="badge-num">300+</div>
+                    <div class="badge-label">Items Monthly</div>
                 </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">Expert</div>
-                    <div class="trust-label">Curated<br>Selection</div>
+                <div class="hero-badge-sep"></div>
+                <div class="hero-badge">
+                    <div class="badge-num">Expert</div>
+                    <div class="badge-label">Curated</div>
                 </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">Fair</div>
-                    <div class="trust-label">Honest<br>Pricing</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgency Banner -->
-    <section class="urgency-banner" id="urgency-banner">
-        <div class="container">
-            <div class="urgency-content">
-                <div class="urgency-text">
-                    <span class="urgency-label">SPECIAL IN-STORE OFFER</span>
-                    <strong>Bring this website</strong> for a special in-store discount on your next purchase. Show us on your phone!
-                </div>
-                <a href="#contact" class="btn btn-white">Get Directions</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collections Section -->
-    <section class="services" id="collections">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What You'll Find</span>
-                <h2>Expertly Curated Antiques<br>And Vintage Collectibles</h2>
-                <p>Our inventory rotates constantly with new finds arriving every week. From fine furniture to rare collectibles, every piece is selected with care and priced with integrity. You never know what you will find.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 18h12M6 6V4h12v2"/></svg>
-                    </div>
-                    <h3>Fine Antiques & Furniture</h3>
-                    <p>Elegant period furniture, ornate cabinets, and heirloom-quality pieces. From Victorian to Arts and Crafts, our furniture selection is chosen for craftsmanship and character.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <h3>Vintage Collectibles</h3>
-                    <p>Curated collectibles that tell a story. Rare figurines, limited editions, nostalgic memorabilia, and unique pieces that spark joy and conversation. Always something new to discover.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                    </div>
-                    <h3>Antique Art & Paintings</h3>
-                    <p>Original oil paintings, watercolors, and prints from accomplished artists. Landscapes, portraits, and abstract works that bring history and beauty to your walls.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-                    </div>
-                    <h3>Retro Kitchenware</h3>
-                    <p>Charming vintage kitchen items from Pyrex to cast iron. Colorful mixing bowls, classic bakeware, and retro gadgets that make cooking fun again. Practical and collectible.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                    </div>
-                    <h3>Vintage Toys & Games</h3>
-                    <p>Rediscover childhood with vintage toys, board games, and collectible playthings. Tin robots, classic action figures, and rare finds that bring back memories.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <h3>Historical Memorabilia</h3>
-                    <p>Authentic historical artifacts, documents, and memorabilia. Political buttons, wartime souvenirs, vintage advertisements, and pieces of American history you can hold.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    </div>
-                    <h3>Antique Clocks & Watches</h3>
-                    <p>Stunning timepieces from another era. Grandfather clocks, mantel clocks, pocket watches, and wristwatches. Each one inspected, documented, and ready to keep time beautifully.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                    </div>
-                    <h3>Estate Sale Finds</h3>
-                    <p>Treasures from estate sales across Southern California. Unique items with provenance and character. These one-of-a-kind pieces go fast, so visit often.</p>
+                <div class="hero-badge-sep"></div>
+                <div class="hero-badge">
+                    <div class="badge-num">Fair</div>
+                    <div class="badge-label">Pricing</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Us Section -->
-    <section class="why-us" id="why-us">
+    <!-- ===================== 2. SPECIAL OFFER STRIP ===================== -->
+    <section class="offer-strip">
+        <div class="container offer-strip-inner">
+            <span class="offer-label">SPECIAL IN-STORE OFFER</span>
+            <span class="offer-text"><strong>Bring this website</strong> on your phone for a special discount on your next purchase</span>
+            <a href="#contact" class="offer-cta">Get Directions</a>
+        </div>
+    </section>
+
+    <!-- ===================== 3. THE ERAS ===================== -->
+    <section class="eras-section" id="eras">
         <div class="container">
-            <div class="why-us-grid">
-                <div class="why-us-content">
-                    <span class="section-tag">Why Antique Station?</span>
-                    <h2>Expert Curation. Fair Prices. Always Something New.</h2>
-                    <p>Not all antique shops are created equal. At Antique Station, we combine deep expertise with a genuine passion for the past. Every item is researched, every price is fair, and our inventory never stays the same for long. That is what makes us Orange's premier antique destination.</p>
-                    <div class="why-features">
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Expert Curation</strong>
-                                <p>Our team brings decades of antique expertise to every purchase decision. We know what is valuable, what is authentic, and what our customers want. That knowledge benefits you.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Fair, Honest Pricing</strong>
-                                <p>We research every item before pricing it. No inflated price tags, no hidden markups. What you see is what you get, and it is priced fairly based on market value.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Constantly Rotating Inventory</strong>
-                                <p>New items arrive every week. If you see something you love, grab it because it may not be here next time. Our regulars know to visit often for the best selection.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Knowledgeable Staff</strong>
-                                <p>Have questions about a piece? We love sharing the history behind our items. Our staff can tell you the era, the maker, and the story behind what catches your eye.</p>
-                            </div>
-                        </div>
+            <span class="section-eyebrow reveal">Browse by Era</span>
+            <h2 class="section-heading reveal stagger-1">Journey Through<br>the Ages</h2>
+            <p class="section-sub reveal stagger-2">Our inventory is organized by period, so you can explore the eras that speak to you. Each section curated by specialists who know the craftsmanship, the history, and the stories behind every piece.</p>
+
+            <div class="eras-timeline">
+                <div class="era-card reveal">
+                    <div class="era-period">Victorian</div>
+                    <div class="era-years">1837 &ndash; 1901</div>
+                    <div class="era-line"></div>
+                    <h3>Opulence & Ornament</h3>
+                    <p>Rich mahogany, intricate carving, and the kind of craftsmanship that defined an empire. From carved settees to gilt mirrors, every piece tells the story of an era that believed more was more.</p>
+                    <span class="era-items">Furniture, Mirrors, Jewelry, Silver</span>
+                </div>
+                <div class="era-card reveal">
+                    <div class="era-period">Arts & Crafts</div>
+                    <div class="era-years">1880 &ndash; 1920</div>
+                    <div class="era-line"></div>
+                    <h3>Handmade Integrity</h3>
+                    <p>The rebellion against mass production. Stickley, Roycroft, and the artisans who believed furniture should be honest, functional, and built to last centuries. Our collection is among the finest in Orange County.</p>
+                    <span class="era-items">Furniture, Copper, Lighting, Pottery</span>
+                </div>
+                <div class="era-card reveal">
+                    <div class="era-period">Art Deco</div>
+                    <div class="era-years">1920 &ndash; 1940</div>
+                    <div class="era-line"></div>
+                    <h3>Geometry & Glamour</h3>
+                    <p>Bold geometric forms, exotic materials, and the unmistakable glamour of the Jazz Age. Bakelite radios, chrome barware, and furniture that makes a room feel like a Gatsby party.</p>
+                    <span class="era-items">Furniture, Barware, Jewelry, Radios</span>
+                </div>
+                <div class="era-card reveal">
+                    <div class="era-period">Mid-Century</div>
+                    <div class="era-years">1940 &ndash; 1970</div>
+                    <div class="era-line"></div>
+                    <h3>Form Follows Function</h3>
+                    <p>Clean lines, organic curves, and the design revolution that shaped modern living. Danish modern, Eames, and the timeless pieces that look as fresh today as they did seventy years ago.</p>
+                    <span class="era-items">Furniture, Lighting, Ceramics, Art</span>
+                </div>
+                <div class="era-card reveal">
+                    <div class="era-period">Retro & Vintage</div>
+                    <div class="era-years">1950 &ndash; 1990</div>
+                    <div class="era-line"></div>
+                    <h3>Nostalgia in Every Detail</h3>
+                    <p>Kitchenware that brings back Sunday dinners, toys that spark childhood memories, and collectibles that defined decades. Pyrex, Tupperware, and the everyday items that became icons.</p>
+                    <span class="era-items">Kitchenware, Toys, Memorabilia, Signs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 4. STATION MASTER'S PICKS ===================== -->
+    <section class="picks-section" id="picks">
+        <div class="container">
+            <span class="section-eyebrow reveal">Curated With Care</span>
+            <h2 class="section-heading reveal stagger-1">Station Master's Picks</h2>
+            <p class="section-sub reveal stagger-2">Our owner handpicks the finest pieces each week — items of exceptional quality, provenance, or simply extraordinary beauty. These are the pieces that make us proud. They go fast.</p>
+
+            <div class="picks-grid">
+                <div class="pick-card reveal">
+                    <div class="pick-ribbon">Curated Pick</div>
+                    <div class="pick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Victorian Mantel Clock</h3>
+                    <p class="pick-era">c. 1880, French</p>
+                    <p>Ormolu and marble, eight-day movement, recently serviced. The kind of clock that transforms a mantelpiece from ordinary to magnificent.</p>
+                </div>
+                <div class="pick-card reveal">
+                    <div class="pick-ribbon">Station Pick</div>
+                    <div class="pick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 18h12M6 6V4h12v2"/></svg>
+                    </div>
+                    <h3>Arts & Crafts Bookcase</h3>
+                    <p class="pick-era">c. 1910, Gustav Stickley</p>
+                    <p>Quarter-sawn oak, original finish, corbel details. Authenticated with maker's mark. This is the piece collectors wait years to find.</p>
+                </div>
+                <div class="pick-card reveal">
+                    <div class="pick-ribbon">Rare Find</div>
+                    <div class="pick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3>Art Deco Diamond Brooch</h3>
+                    <p class="pick-era">c. 1930, Platinum</p>
+                    <p>Geometric platinum setting with approximately 2 carats of old European cuts. Signed by a notable maker. Comes with gemological documentation.</p>
+                </div>
+                <div class="pick-card reveal">
+                    <div class="pick-ribbon">Featured</div>
+                    <div class="pick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                    </div>
+                    <h3>Hudson River School Landscape</h3>
+                    <p class="pick-era">c. 1860, Oil on Canvas</p>
+                    <p>Sweeping landscape in the American Romantic tradition. Relined and in excellent condition. A window into how 19th-century artists saw the New World.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 5. HISTORICAL TIMELINE ===================== -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <span class="section-eyebrow reveal">Our Heritage</span>
+            <h2 class="section-heading reveal stagger-1">A Legacy on Glassell Street</h2>
+            <p class="section-sub reveal stagger-2">Glassell Street has been Orange's antique district for generations. Antique Station carries that tradition forward — a place where history isn't just sold, it's honored.</p>
+
+            <div class="history-timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">The Beginning</div>
+                        <p>Antique Station opens its doors on historic Glassell Street, joining a community of dealers who had been serving collectors for decades. The vision: quality over quantity, authenticity over trend.</p>
                     </div>
                 </div>
-                <div class="why-us-visual">
-                    <div class="stats-card">
-                        <div class="stats-number" data-count="300">300+</div>
-                        <div class="stats-label">Items Added Monthly</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="8">8</div>
-                        <div class="stats-label">Curated Categories</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="500">500+</div>
-                        <div class="stats-label">Shoppers Monthly</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number">Weekly</div>
-                        <div class="stats-label">New Arrivals</div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Building Trust</div>
+                        <p>Word spreads among serious collectors. Our reputation for fair pricing and authenticated pieces brings collectors from across Southern California. Other dealers start referring clients our way.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">The Collection Grows</div>
+                        <p>Eight curated categories, 300+ new items monthly. We begin offering authentication services and restoration referrals — not just selling, but serving as a resource for the collecting community.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Today</div>
+                        <p>A fixture on Glassell Street with a 4.5-star Yelp rating and a loyal following of collectors, designers, and history enthusiasts. Still family-operated. Still committed to the same principles: authenticity, fairness, and respect for the past.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="reviews">
+    <!-- ===================== 6. AUTHENTICATION ===================== -->
+    <section class="auth-section" id="authentication">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Customer Reviews</span>
-                <h2>What Our Customers<br>Are Saying</h2>
-                <p>Real reviews from antique lovers who shop at Antique Station. Authentic feedback from people who appreciate quality and character.</p>
+            <div class="auth-grid">
+                <div class="auth-content reveal">
+                    <span class="section-eyebrow">Our Promise</span>
+                    <h2>Every Piece<br>Authenticated</h2>
+                    <p>In a market flooded with reproductions and misattributions, Antique Station stands apart. We don't guess. We research. Every item that enters our shop is examined, documented, and verified before it reaches our floor.</p>
+                    <p>When we say a piece is Victorian, it's Victorian. When we attribute a piece to a maker, we can show you why. Our authentication process is thorough and transparent — because your trust is worth more than any single sale.</p>
+                    <div class="auth-steps">
+                        <div class="auth-step">
+                            <div class="auth-step-num">01</div>
+                            <div>
+                                <strong>Physical Examination</strong>
+                                <p>Construction methods, materials, patina, and wear patterns tell the true story.</p>
+                            </div>
+                        </div>
+                        <div class="auth-step">
+                            <div class="auth-step-num">02</div>
+                            <div>
+                                <strong>Maker's Marks & Labels</strong>
+                                <p>We identify and cross-reference hallmarks, maker's marks, and original labels.</p>
+                            </div>
+                        </div>
+                        <div class="auth-step">
+                            <div class="auth-step-num">03</div>
+                            <div>
+                                <strong>Provenance Research</strong>
+                                <p>When available, we trace ownership history and provide documentation.</p>
+                            </div>
+                        </div>
+                        <div class="auth-step">
+                            <div class="auth-step-num">04</div>
+                            <div>
+                                <strong>Written Guarantee</strong>
+                                <p>Major purchases include a written guarantee of authenticity and period.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-visual reveal">
+                    <div class="auth-card">
+                        <div class="auth-card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Our Authentication Guarantee</h3>
+                        <p>Every item priced over $500 includes a written authenticity statement. If we've misidentified a piece, we'll take it back — no questions asked. That's not a policy. That's a principle.</p>
+                        <div class="auth-card-badge">Guaranteed Authentic</div>
+                    </div>
+                </div>
             </div>
-            <div class="reviews-grid" id="reviewsGrid">
-                <div class="review-card">
+        </div>
+    </section>
+
+    <!-- ===================== 7. RESTORATION SERVICES ===================== -->
+    <section class="restoration-section" id="restoration">
+        <div class="container">
+            <span class="section-eyebrow reveal">Preserving the Past</span>
+            <h2 class="section-heading reveal stagger-1">Restoration & Repair Services</h2>
+            <p class="section-sub reveal stagger-2">Antiques deserve expert care. We partner with trusted restorers who understand that preservation isn't about making something look new — it's about honoring what's original while ensuring the piece endures for another century.</p>
+
+            <div class="restoration-grid">
+                <div class="restoration-card reveal">
+                    <div class="restoration-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 18h12M6 6V4h12v2"/></svg>
+                    </div>
+                    <h3>Furniture Restoration</h3>
+                    <p>French polishing, veneer repair, structural stabilization, and finish conservation. Our restorers use period-appropriate techniques and materials.</p>
+                </div>
+                <div class="restoration-card reveal">
+                    <div class="restoration-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Clock Repair</h3>
+                    <p>From grandfather clocks to mantel pieces, our horologist repairs and services mechanical movements. Your heirloom keeps time again.</p>
+                </div>
+                <div class="restoration-card reveal">
+                    <div class="restoration-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3>Jewelry Repair</h3>
+                    <p>Stone replacement, clasp repair, cleaning, and appraisal services. Your vintage jewelry handled by bench-trained professionals.</p>
+                </div>
+                <div class="restoration-card reveal">
+                    <div class="restoration-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                    </div>
+                    <h3>Art Conservation</h3>
+                    <p>Painting cleaning, relining, and frame restoration. Works on paper receive archival treatment. Your art preserved for generations.</p>
+                </div>
+            </div>
+            <div class="restoration-cta reveal">
+                <p>Have a piece that needs expert care? <a href="tel:7146333934">Call us at (714) 633-3934</a> and we'll connect you with the right specialist.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 8. COLLECTOR RESOURCES ===================== -->
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <span class="section-eyebrow reveal">For Collectors</span>
+            <h2 class="section-heading reveal stagger-1">Collector's Resources</h2>
+            <p class="section-sub reveal stagger-2">We're more than a shop — we're a resource. Whether you're starting a collection or managing one, we offer the expertise and connections to help you make informed decisions.</p>
+
+            <div class="resources-grid">
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <h3>Verbal Appraisals</h3>
+                    <p>Bring in your pieces for a professional verbal assessment. No appointment needed during business hours. We'll tell you what you have and what it's worth.</p>
+                </div>
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h3>Wish List Service</h3>
+                    <p>Tell us what you're looking for and we'll notify you when it arrives. Our network of dealers and estate sources means we find what others can't.</p>
+                </div>
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Estate Liquidation</h3>
+                    <p>Handling a family estate? We offer compassionate estate liquidation services and can purchase entire collections or individual pieces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 9. REVIEWS ===================== -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <span class="section-eyebrow reveal">Testimonials</span>
+            <h2 class="section-heading reveal stagger-1">What Our Collectors Say</h2>
+            <p class="section-sub reveal stagger-2">From seasoned collectors to first-time buyers, people trust Antique Station for quality, authenticity, and integrity.</p>
+
+            <div class="reviews-grid">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"This is the best antique shop in Orange, hands down. The selection is incredible and the prices are actually fair. I found a beautiful Victorian mantle clock that I have been searching for everywhere. The staff was so knowledgeable about its history."</p>
+                    <p class="review-text">"Best antique shop in Orange, hands down. The selection is incredible and the prices are actually fair. I found a beautiful Victorian mantle clock I'd been searching for everywhere."</p>
                     <div class="review-author">
                         <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>Featured Review on Yelp</span>
-                        </div>
+                        <div><strong>Yelp Verified</strong><span>Featured Review</span></div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"I visit Antique Station at least twice a month and I always find something new. The inventory really does change all the time. Last visit I scored an amazing mid-century bar cart for a fraction of what it would cost online."</p>
+                    <p class="review-text">"I visit Antique Station at least twice a month and always find something new. The inventory really does change constantly. Last visit I scored an amazing mid-century bar cart for a fraction of what it would cost online."</p>
                     <div class="review-author">
                         <div class="review-avatar">R</div>
-                        <div>
-                            <strong>Robert T.</strong>
-                            <span>Verified Customer Review</span>
-                        </div>
+                        <div><strong>Robert T.</strong><span>Verified Customer</span></div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Finally an antique store that does not overprice everything. The owner clearly knows their stuff but does not use that knowledge to gouge customers. The art selection alone is worth the trip."</p>
+                    <p class="review-text">"Finally an antique store that doesn't overprice everything. The owner clearly knows their stuff but doesn't use that knowledge to gouge customers. The art selection alone is worth the trip."</p>
                     <div class="review-author">
                         <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>5-Star Review</span>
-                        </div>
+                        <div><strong>Yelp Verified</strong><span>5-Star Review</span></div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Brought my mother here for her birthday and she was thrilled. She collects antique kitchenware and found some rare Pyrex pieces she has been wanting for years. The staff made her feel welcome and helped her find exactly what she wanted."</p>
+                    <p class="review-text">"Brought my mother here for her birthday and she was thrilled. She collects antique kitchenware and found rare Pyrex pieces she's been wanting for years. The staff made her feel welcome."</p>
                     <div class="review-author">
                         <div class="review-avatar">L</div>
-                        <div>
-                            <strong>Linda P.</strong>
-                            <span>Verified Customer Review</span>
-                        </div>
+                        <div><strong>Linda P.</strong><span>Verified Customer</span></div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"The vintage toy section is absolutely amazing. Found toys from my childhood that I have not seen in 40 years. Brought back so many memories. My grandkids love visiting too."</p>
+                    <p class="review-text">"The vintage toy section is absolutely amazing. Found toys from my childhood I haven't seen in 40 years. Brought back so many memories. My grandkids love visiting too."</p>
                     <div class="review-author">
                         <div class="review-avatar">J</div>
-                        <div>
-                            <strong>James W.</strong>
-                            <span>Verified Customer Review</span>
-                        </div>
+                        <div><strong>James W.</strong><span>Verified Customer</span></div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="review-card reveal">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"I am an interior designer and Antique Station is my secret weapon. The estate sale finds are incredible and the prices let me pass great value to my clients. Highly recommend for anyone who appreciates quality antiques."</p>
+                    <p class="review-text">"I'm an interior designer and Antique Station is my secret weapon. The estate sale finds are incredible and the prices let me pass great value to my clients. Highly recommend."</p>
                     <div class="review-author">
                         <div class="review-avatar">M</div>
-                        <div>
-                            <strong>Maria C.</strong>
-                            <span>Verified Customer Review</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="reviews-cta">
-                <p>Join hundreds of satisfied antique lovers. Visit Antique Station on Glassell St.</p>
-                <a href="tel:7146333934" class="btn btn-primary">Call (714) 633-3934</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">About Antique Station</span>
-                    <h2>Preserving the Past.<br>Enriching the Present.</h2>
-                    <p>Antique Station has been a fixture on Glassell Street in Orange for years, earning a reputation as the city's premier antique destination. Our passion for history and craftsmanship drives everything we do, from the items we select to the way we price them.</p>
-                    <p>We believe that antiques should be accessible, not just for collectors with deep pockets. That is why we work hard to keep our prices fair while maintaining the highest standards for quality and authenticity. Every item in our shop has been researched and evaluated by our experienced team.</p>
-                    <p>Whether you are furnishing a home, starting a collection, or searching for that perfect gift, our knowledgeable staff is here to help. We love sharing the stories behind our pieces almost as much as we love finding them.</p>
-                    <div class="trust-badges">
-                        <span class="trust-badge">Expert Curation</span>
-                        <span class="trust-badge">Fair Pricing</span>
-                        <span class="trust-badge">Rotating Inventory</span>
-                        <span class="trust-badge">Knowledgeable Staff</span>
-                    </div>
-                </div>
-                <div class="about-details">
-                    <div class="detail-card">
-                        <h4>Decades of Expertise</h4>
-                        <p>Our team brings years of experience in antiques and collectibles. We attend estate sales, auctions, and private collections to find the finest pieces for our customers.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Authenticity Guaranteed</h4>
-                        <p>Every item is researched and verified before it hits our floor. We stand behind what we sell. If we say it is Victorian, it is Victorian. Period.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Historic Glassell Street</h4>
-                        <p>Located on Orange's famous Glassell Street, we are part of a vibrant antique and vintage district. Make a day of exploring all the shops in the neighborhood.</p>
+                        <div><strong>Maria C.</strong><span>Verified Customer</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section" id="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>The Best Antiques Do Not Wait.<br>Visit Before They Are Gone.</h2>
-                <p>Our inventory rotates constantly. The piece you admire today could be sold tomorrow. Stop by Antique Station and discover something extraordinary before someone else takes it home.</p>
-                <div class="cta-buttons">
-                    <a href="tel:7146333934" class="btn btn-primary btn-lg btn-pulse">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        Call: (714) 633-3934
-                    </a>
-                    <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Visit Us Today</a>
-                </div>
-                <p class="cta-note">Bring this website for a <strong>special in-store discount!</strong></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- ===================== 10. CONTACT ===================== -->
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
+                <div class="contact-info reveal">
+                    <span class="section-eyebrow">Visit the Station</span>
                     <h2>Come See Us on Glassell St</h2>
-                    <p>Walk-ins are always welcome. Browse at your leisure, ask questions, and let our knowledgeable staff help you find exactly what you are looking for.</p>
+                    <p>Walk-ins are always welcome. Browse at your leisure, ask questions, and let our knowledgeable staff help you find exactly what you're looking for — or discover something you didn't know you needed.</p>
+
                     <div class="contact-details">
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                             <div>
                                 <strong>Phone</strong>
                                 <a href="tel:7146333934">(714) 633-3934</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             <div>
                                 <strong>Address</strong>
                                 <span>178 S Glassell St<br>Orange, CA 92866</span>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                             <div>
                                 <strong>Hours</strong>
-                                <span>Mon-Sat: 10:00 AM - 6:00 PM<br>Sun: 11:00 AM - 5:00 PM</span>
+                                <span>Mon&ndash;Sat: 10:00 AM &ndash; 6:00 PM<br>Sun: 11:00 AM &ndash; 5:00 PM</span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.2!2d-117.8531!3d33.7865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd9a57488a3f3%3A0xabcdef!2s178+S+Glassell+St+Orange+CA!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Antique Station Location"></iframe>
+                    </div>
                 </div>
-                <div class="contact-form-wrapper">
+
+                <div class="contact-form-wrapper reveal">
+                    <h3>Plan Your Visit</h3>
                     <form class="contact-form" id="contactForm">
-                        <h3>Plan Your Visit</h3>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
@@ -431,62 +545,59 @@
                         </div>
                         <div class="form-group">
                             <label for="lookingfor">What Are You Looking For?</label>
-                            <textarea id="lookingfor" name="lookingfor" rows="3" placeholder="Tell us what antique pieces you are searching for..."></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="visitdate">Preferred Visit Date</label>
-                            <input type="date" id="visitdate" name="visitdate">
+                            <textarea id="lookingfor" name="lookingfor" rows="3" placeholder="Tell us what antique pieces you're searching for..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">Send My Request</button>
-                        <p class="form-note">We will respond within 1 hour during business hours.</p>
+                        <p class="form-note">We'll respond within 1 hour during business hours.</p>
                     </form>
+                    <div class="form-success" id="formSuccess">
+                        <h4>Request Received!</h4>
+                        <p>We'll be in touch soon. We look forward to seeing you at the Station.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.2!2d-117.8531!3d33.7865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd9a57488a3f3%3A0xabcdef!2s178+S+Glassell+St+Orange+CA!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="350" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">AS</span>
+                        <div class="logo-emblem">&#10022;</div>
                         <div class="logo-text">
                             <span class="logo-name">Antique Station</span>
-                            <span class="logo-tagline">Orange's Premier Antique Destination</span>
+                            <span class="logo-sub">Where History Finds a Home</span>
                         </div>
                     </div>
-                    <p>Orange's premier antique destination on Glassell Street. Expertly curated antiques, fair pricing, and new arrivals every week.</p>
+                    <p>Orange's premier antique destination on Glassell Street. Expertly curated, authenticated, and fairly priced. New arrivals every week.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#collections">Our Collections</a></li>
-                        <li><a href="#why-us">Why Antique Station</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Visit Us</a></li>
+                        <li><a href="#eras">The Eras</a></li>
+                        <li><a href="#picks">Station Master's Picks</a></li>
+                        <li><a href="#authentication">Authentication</a></li>
+                        <li><a href="#restoration">Restoration</a></li>
+                        <li><a href="#resources">Collector Resources</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Collections</h4>
                     <ul>
-                        <li><a href="#collections">Fine Antiques</a></li>
-                        <li><a href="#collections">Vintage Collectibles</a></li>
-                        <li><a href="#collections">Art & Paintings</a></li>
-                        <li><a href="#collections">Clocks & Watches</a></li>
-                        <li><a href="#collections">Estate Sale Finds</a></li>
+                        <li><a href="#eras">Victorian</a></li>
+                        <li><a href="#eras">Arts & Crafts</a></li>
+                        <li><a href="#eras">Art Deco</a></li>
+                        <li><a href="#eras">Mid-Century</a></li>
+                        <li><a href="#eras">Retro & Vintage</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>Contact</h4>
                     <p><a href="tel:7146333934">(714) 633-3934</a></p>
                     <p>178 S Glassell St<br>Orange, CA 92866</p>
-                    <p>Mon-Sat: 10AM - 6PM<br>Sun: 11AM - 5PM</p>
+                    <p>Mon&ndash;Sat: 10AM &ndash; 6PM<br>Sun: 11AM &ndash; 5PM</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -499,11 +610,11 @@
     <div class="mobile-cta" id="mobileCta">
         <a href="tel:7146333934" class="btn btn-primary btn-full">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            Visit Us Today: (714) 633-3934
+            Visit Us: (714) 633-3934
         </a>
     </div>
 
-    <!-- Back to Top Button -->
+    <!-- Back to Top -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
 
     <script src="script.js"></script>
